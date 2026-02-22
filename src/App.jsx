@@ -34,7 +34,7 @@ return () => window.removeEventListener("scroll", handleScroll);
 return (
 <>
 <Hero openForm={() => setShowForm(true)} />
-{visibleSections >= 2 && <BigImage />}
+<BigImage />
 {visibleSections >= 2.9 && <Problems />}
 {visibleSections >= 3.8 && <Solutions />}
 {visibleSections >= 4.7 && <Proof />}
