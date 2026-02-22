@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>fatloss-landing-page</title>
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<!-- Montserrat (weights you choose) -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800;900&display=swap" rel="stylesheet">
+
+<!-- Archivo Black -->
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+
+<!-- Anton -->
+<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        fontFamily: {
+          montserrat: ['"Montserrat"', 'sans-serif'],
+          archivo: ['"Archivo Black"', 'sans-serif'],
+          anton: ['"Anton"', 'sans-serif'],   // ← Add this
+        },
+      },
+    },
+  }
+</script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        animation: {
+          glow: "glow 2s ease-in-out infinite alternate",
+        },
+        keyframes: {
+          glow: {
+            "0%": {
+              boxShadow: "0 0 20px rgba(163,230,53,0.4)",
+            },
+            "100%": {
+              boxShadow: "0 0 60px rgba(163,230,53,0.9)",
+            },
+          },
+        },
+      },
+    },
+  }
+</script>
+
+<script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
