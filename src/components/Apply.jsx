@@ -142,9 +142,6 @@ export default function Apply({ closeForm }) {
                 Close
               </button>
             </div>
-        {alert(
-    "This is a demo version. Emails are currently disabled because backend services are not connected."
-  )}
           </>
         )}
       </div>
